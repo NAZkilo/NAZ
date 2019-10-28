@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Happy Birthday</string>
+    <string name="str1">one</string>
+    <string name="str2">two</string>
+    <string name="str3">three</string>
+    <string name="btn_label" translatable="false">Button</string>
+    <string name="btntmp_label" translatable="false">Click</string>
+    <string name="hint" translatable="false">Input...</string>
+    <string name="txt_result" translatable="false">Result:</string>
+
+    <string name="txt_switch" translatable="false">Result:</string>
+    <string name="rmb_hint" translatable="false">Input RMB</string>
+    <string name="dollar" translatable="false">dollar</string>
+    <string name="euro" translatable="false">euro</string>
+    <string name="won" translatable="false">won</string>
+    <string name="setting" translatable="false">setting</string>
+</resources>

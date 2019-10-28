@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="str1">祝你生日快乐</string>
+    <string name="str2">署名：刘梦缘</string>
+    <string name="str3">九月十六日</string>
+
+</resources>
