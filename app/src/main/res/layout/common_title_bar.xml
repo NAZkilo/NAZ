@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48pt">
+    <RelativeLayout
+        android:id="@+id/common_title_bar_root"
+        android:layout_width="match_parent"
+        android:layout_height="48pt"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/common_bar_back"
+            android:layout_width="37pt"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/common_bar_back_image"
+                android:layout_width="16pt"
+                android:layout_height="16pt"
+                android:layout_centerInParent="true"
+                android:src="@drawable/white_back"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/common_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_white"
+            android:textSize="17pt"/>
+        <Button
+            android:id="@+id/common_bar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14pt"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"/>
+    </RelativeLayout>
+</RelativeLayout>

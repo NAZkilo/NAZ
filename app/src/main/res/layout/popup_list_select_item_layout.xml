@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+    <TextView
+        android:id="@+id/popup_list_select_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_666666"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/clickable_white_ecf3ff_selector"
+        android:paddingTop="10pt"
+        android:paddingBottom="10pt"
+        android:textSize="12pt"/>
+</RelativeLayout>

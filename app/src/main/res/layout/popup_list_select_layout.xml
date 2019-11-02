@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/popup_list_select_root">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/popup_list_select_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4pt"
+        android:background="@drawable/solid_white_stroke_f4f4f4_radius_22_shape"/>
+</LinearLayout>

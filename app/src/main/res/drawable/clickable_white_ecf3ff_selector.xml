@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--按下 触摸背景颜色变化-->
+    <item android:drawable="@color/color_ecf3ff" android:state_pressed="true"/>
+    <item android:drawable="@color/color_ecf3ff" android:state_focused="true"/>
+    <item android:drawable="@color/color_white"/>
+</selector>

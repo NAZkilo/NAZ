@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ecf3ff">
+    <include layout="@layout/common_title_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/solid_white_radius_10_shape"
+        android:layout_marginTop="6pt"
+        android:layout_marginLeft="9pt"
+        android:layout_marginRight="9pt">
+        <!--日期选择-->
+        <RelativeLayout
+            android:id="@+id/add_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="45pt">
+            <TextView
+                android:id="@+id/add_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_select"
+                android:textColor="@color/color_333333"
+                android:textSize="14pt"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16pt"/>
+
+            <RelativeLayout
+                android:id="@+id/add_date_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/add_tv1">
+
+                <ImageView
+                    android:id="@+id/add_image1"
+                    android:layout_width="24pt"
+                    android:layout_height="24pt"
+                    android:layout_marginRight="16pt"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/calendar"/>
+
+                <TextView
+                    android:id="@+id/add_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2019年9月24日"
+                    android:layout_toLeftOf="@+id/add_image1"
+                    android:textSize="14pt"
+                    android:layout_marginRight="16pt"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_333333" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16pt"
+                android:layout_marginRight="16pt"
+                android:background="@color/color_f4f4f4"/>
+        </RelativeLayout>
+
+        <!--收支类型-->
+        <RelativeLayout
+            android:id="@+id/add_rl2"
+            android:layout_width="match_parent"
+            android:layout_height="45pt"
+            android:layout_below="@+id/add_rl1">
+            <TextView
+                android:id="@+id/add_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income_expand_type"
+                android:textColor="@color/color_333333"
+                android:textSize="14pt"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16pt"/>
+
+            <RelativeLayout
+                android:id="@+id/add_ie_type_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/add_tv2">
+
+                <ImageView
+                    android:id="@+id/add_image2"
+                    android:layout_width="24pt"
+                    android:layout_height="24pt"
+                    android:layout_marginRight="16pt"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"/>
+
+                <TextView
+                    android:id="@+id/add_ie_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/add_image2"
+                    android:textSize="14pt"
+                    android:textColorHint="@color/color_999999"
+                    android:hint="@string/please_select_income_expand_type"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="16pt"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_333333" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16pt"
+                android:layout_marginRight="16pt"
+                android:background="@color/color_f4f4f4"/>
+        </RelativeLayout>
+
+        <!--金额-->
+        <RelativeLayout
+            android:id="@+id/add_rl3"
+            android:layout_width="match_parent"
+            android:layout_height="45pt"
+            android:layout_below="@+id/add_rl2">
+            <TextView
+                android:id="@+id/add_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:textColor="@color/color_333333"
+                android:textSize="14pt"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16pt"/>
+
+            <EditText
+                android:id="@+id/add_amount_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:paddingRight="56pt"
+                android:textColor="@color/color_333333"
+                android:textSize="14pt"
+                android:hint="@string/please_enter_amount"
+                android:textColorHint="@color/color_999999"
+                android:layout_toRightOf="@+id/add_tv3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16pt"
+                android:layout_marginRight="16pt"
+                android:background="@color/color_f4f4f4"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/add_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remark"
+            android:textSize="14pt"
+            android:textColor="@color/color_333333"
+            android:layout_marginLeft="16pt"
+            android:layout_below="@+id/add_rl3"
+            android:layout_marginTop="16pt"/>
+        <EditText
+            android:id="@+id/add_remark_edit"
+            android:layout_width="match_parent"
+            android:layout_height="210pt"
+            android:layout_margin="16pt"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_999999"
+            android:padding="10pt"
+            android:gravity="left|top"
+            android:hint="@string/remark_hint"
+            android:background="@drawable/solid_white_stroke_f4f4f4_radius_22_shape"
+            android:layout_below="@+id/add_tv4"/>
+    </RelativeLayout>
+</LinearLayout>
