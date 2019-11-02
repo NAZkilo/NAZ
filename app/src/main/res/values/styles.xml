@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+<<<<<<< HEAD
 
     <style name="MyDialog" parent="@style/Animation.AppCompat.Dialog">
         <item name="android:windowFrame">@null</item>
@@ -36,4 +37,6 @@
         <!-- 指定消失的动画xml -->
     </style>
 
+=======
+>>>>>>> 6cb1247689b26ec7adc35ddef9805c9d1dca8021
 </resources>
